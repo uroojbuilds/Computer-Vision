@@ -1,0 +1,20 @@
+# Raw training dataset - not needed to run the project
+weapon_dataset/
+weapon_detection/
+
+# Training run artifacts - keep only the model actually used by the code
+runs/*
+!runs/detect/
+runs/detect/*
+!runs/detect/weapon_detector/
+runs/detect/weapon_detector/*
+!runs/detect/weapon_detector/weights/
+runs/detect/weapon_detector/weights/*
+!runs/detect/weapon_detector/weights/best.pt
+
+# Empty/unused file
+TEST_VIDEO
+
+# Python cache
+__pycache__/
+*.pyc
